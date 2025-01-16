@@ -53,6 +53,9 @@ Vérifier que Falco fonctionne : Une fois le conteneur en cours d'exécution, vo
 Falco surveille par défaut l’activité Docker en analysant les événements du socket Docker. Voici comment tester cela. </br>
 Créer un conteneur Docker à analyser : Lancez un conteneur NGINX comme exemple : </br>
 ```
+docker pull nginx
+```
+```
 docker run --rm -d --name nginx-example nginx
 ```
 Simuler un comportement suspect dans le conteneur : Accédez à une session interactive dans le conteneur NGINX :
